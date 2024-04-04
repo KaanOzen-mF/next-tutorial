@@ -1,3 +1,11 @@
+/* Type description for post request  */
+type Post = {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+};
+
 /* Type description for fetch request */
 type User = {
   id: number;
