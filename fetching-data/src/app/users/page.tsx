@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import getAllUser from "../lib/getAllUser";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Users",
@@ -12,16 +13,20 @@ export default async function UserPage() {
 
   const users = await userData;
 
-  return (
-    <div className="flex flex-col text-center p-24">
-      <h1 className="text-4xl">User Page</h1>
-      <div className="flex flex-col items-center">
-        {users.map((user) => (
-          <div key={user.id} className="flex flex-col items-center p-4">
-            <h2 className="text-xl">{user.name}</h2>
-          </div>
-        ))}
-      </div>
-    </div>
+  const content = (
+    <section className="flex flex-col items-center p-4">
+      <h2>
+        <Link href="/">Go to the Home Page</Link>
+      </h2>
+      <h1 className="text-2xl mt-6 underline mb-2">Users</h1>
+      {users.map((user) => (
+        <div key={user.id}>
+          <p>
+            <Link href={`/users/${user.id}`}>{user.name}</Link>
+          </p>
+        </div>
+      ))}
+    </section>
   );
+  return content;
 }
