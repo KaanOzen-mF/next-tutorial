@@ -4,7 +4,15 @@ import NotFound from "./not-found";
 import getFormattedDate from "../../../../lib/getFormattedDate";
 import Link from "next/link";
 
-export function generateMetaData({ params }: { params: { postId: string } }) {
+export function generateStaticParams() {
+  const posts = getSortedPostData();
+
+  return posts.map((post) => ({
+    postId: post.id,
+  }));
+}
+
+export function generateMetadata({ params }: { params: { postId: string } }) {
   const posts = getSortedPostData();
   const { postId } = params;
 
@@ -12,7 +20,7 @@ export function generateMetaData({ params }: { params: { postId: string } }) {
 
   if (!post) {
     return {
-      title: "Post not found",
+      title: "Post Not Found",
     };
   }
 
