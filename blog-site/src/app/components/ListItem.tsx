@@ -1,5 +1,5 @@
 import Link from "next/link";
-import getFormattedData from "../../../lib/getFormattedData";
+import getFormattedData from "../../../lib/getFormattedDate";
 type Props = {
   post: BlogPost;
 };
