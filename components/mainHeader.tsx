@@ -4,19 +4,31 @@ import Logo from "@/assets/logo.png";
 
 export default function MainHeader() {
   return (
-    <header>
-      <div className="flex bg-slate-500 h-16 items-center p-2 justify-between">
-        <Link href="/" className="flex flex-row items-center">
-          <Image src={Logo} alt="logo" priority width={50} height={50} />
-          <p className="uppercase ml-2 text-xl">Nextlevel Food</p>
+    <header className="flex space-between items-center py-8 px-4 md:px-1/10">
+      <div className="flex flex-row items-center justify-center gap-8 font-bold">
+        <Link
+          href="/"
+          className="flex flex-row items-center justify-center gap-1 font-bold"
+        >
+          <Image
+            src={Logo}
+            alt="logo"
+            priority
+            className="w-20 h-20 object-contain drop-shadow-lg"
+          />
+          <p className="uppercase ml-2 text-2xl">Nextlevel Food</p>
         </Link>
         <nav>
-          <ul className="flex flex-row items-center space-x-4 text-lg whitespace-nowrap">
+          <ul className="list-none m-0 p-0 flex gap-6 text-xl">
             <li>
-              <Link href="/meals">Browse Meals</Link>
+              <Link href="/meals" className="font-bold py-2 px-4">
+                Browse Meals
+              </Link>
             </li>
             <li>
-              <Link href="/community">Community</Link>
+              <Link href="/community" className="font-bold py-2 px-4">
+                Community
+              </Link>
             </li>
           </ul>
         </nav>
