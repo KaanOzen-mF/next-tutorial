@@ -1,9 +1,79 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Home Page</h1>
-    </main>
+    <>
+      <header className="flex gap-12 my-12 mx-auto w-11/12 max-w-6xl">
+        {/* Slide Show Part  Start*/}
+        <div className="w-96 h-56">
+          <p>Slide Show</p>
+        </div>
+        {/* Slide Show Part End */}
+
+        <div className="text-xl">
+          {/* Hero Part */}
+          <div>
+            <h1
+              className="text-3xl font-bold text-serif tracking-wide uppercase 
+            bg-gradient-to-r-from-orange-to-yellow bg-clip-text text-transparent"
+            >
+              NextLevel Food for NextLevel Foodies
+            </h1>
+            <p className="mt-4">Taste & Share food from all over the world</p>
+          </div>
+          {/* Hero Part  End*/}
+
+          {/* CTA Part Start*/}
+          <div className="flex text-xl gap-4">
+            <Link
+              href="/community"
+              className="inline-block mt-4 py-2 rounded-lg
+               text-ff9b05 font-normal no-underline hover:text-f9b241 hover:bg-transparent"
+            >
+              Join the Community
+            </Link>
+            <Link
+              href="/meals"
+              className="inline-block mt-4 py-2 px-4 ml-7 rounded-lg
+               text-white font-normal no-underline bg-gradient-to-r-from-orange-to-yellow
+               hover:text-f9b241 hover:bg-transparent"
+            >
+              Explore Meals
+            </Link>
+          </div>
+          {/* CTA Part End*/}
+        </div>
+      </header>
+
+      <main>
+        {/* Section Part Start*/}
+        <section className="flex flex-col text-2xl w-11/12 max-w-3xl my-8 mx-auto text-center">
+          <h2>How it works</h2>
+          <p>
+            NextLevel Food is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes,
+            and to connect with other food lovers.
+          </p>
+          <p>
+            NextLevel Food is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
+        <section className="flex flex-col text-2xl w-11/12 max-w-3xl my-8 mx-auto text-center">
+          <h2>Why NextLevel Food?</h2>
+          <p>
+            NextLevel Food is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes,
+            and to connect with other food lovers.
+          </p>
+          <p>
+            NextLevel Food is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
+        {/* Section Part End*/}
+      </main>
+    </>
   );
 }
