@@ -17,6 +17,9 @@ const config: Config = {
         ff9b05: "#ff9b05",
         f9b241: "#f9b241",
       },
+      padding: {
+        "1/10": "10%",
+      },
     },
   },
   plugins: [],
