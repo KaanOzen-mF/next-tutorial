@@ -4,7 +4,10 @@ import Logo from "@/assets/logo.png";
 
 export default function MainHeader() {
   return (
-    <header className="flex space-between items-center py-8 px-4 md:px-1/10">
+    <header
+      className="absolute top-0 w-full z-10
+    flex justify-between  text-white py-8 px-4 md:px-1/10"
+    >
       <div className="flex flex-row items-center justify-center gap-8 font-bold">
         <Link
           href="/"
