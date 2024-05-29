@@ -1,6 +1,5 @@
 import ImageSlider from "@/components/imageSlider";
-import Image from "next/image";
-import Link from "next/link";
+import NavLink from "@/components/navLink";
 
 export default function Home() {
   return (
@@ -26,24 +25,8 @@ export default function Home() {
           {/* Hero Part  End*/}
 
           {/* CTA Part Start*/}
-          <div className="flex text-xl gap-4">
-            <Link
-              href="/community"
-              className="inline-block mt-4 py-2 rounded-lg
-               text-ff9b05 font-normal no-underline hover:text-f9b241 
-               hover:bg-transparent"
-            >
-              Join the Community
-            </Link>
-            <Link
-              href="/meals"
-              className="inline-block mt-4 py-2 px-4 ml-7 rounded-lg
-               text-white font-normal no-underline bg-gradient-to-r-from-orange-to-yellow
-               hover:text-f9b241 hover:bg-transparent"
-            >
-              Explore Meals
-            </Link>
-          </div>
+
+          <div className="flex text-xl gap-4"></div>
           {/* CTA Part End*/}
         </div>
       </header>
