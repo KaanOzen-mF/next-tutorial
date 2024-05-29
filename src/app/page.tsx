@@ -1,3 +1,4 @@
+import ImageSlider from "@/components/imageSlider";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +8,7 @@ export default function Home() {
       <header className="flex gap-12 my-12 mx-auto w-11/12 max-w-6xl">
         {/* Slide Show Part  Start*/}
         <div className="w-96 h-56">
-          <p>Slide Show</p>
+          <ImageSlider />
         </div>
         {/* Slide Show Part End */}
 
@@ -29,7 +30,8 @@ export default function Home() {
             <Link
               href="/community"
               className="inline-block mt-4 py-2 rounded-lg
-               text-ff9b05 font-normal no-underline hover:text-f9b241 hover:bg-transparent"
+               text-ff9b05 font-normal no-underline hover:text-f9b241 
+               hover:bg-transparent"
             >
               Join the Community
             </Link>
