@@ -1,7 +1,10 @@
 import MealsGrid from "@/components/mealsGrid";
+import { getMeals } from "@/lib/meals";
 import Link from "next/link";
 
-export default function Meals() {
+export default async function Meals() {
+  const meals = await getMeals();
+
   return (
     <>
       <header className="gap-12 mt-12 mr-auto mb-20 ml-auto w-11/12 max-w-6xl text-2xl text-center">
@@ -24,8 +27,8 @@ export default function Meals() {
           </Link>
         </p>
       </header>
-      <main>
-        <MealsGrid meals={[]} />
+      <main className="flex flex-col items-center">
+        <MealsGrid meals={meals} />
       </main>
       ;
     </>
