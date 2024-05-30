@@ -9,7 +9,7 @@ export default function Community() {
     <>
       <header className="gap-12 mt-12 mr-auto mb-20 ml-auto w-11/12 max-w-6xl text-2xl text-center">
         <h1 className="font-sans">
-          One shared passion:
+          One shared passion:{" "}
           <span className="bg-gradient-to-r-from-orange-to-yellow bg-clip-text text-transparent">
             Food
           </span>
