@@ -20,6 +20,9 @@ const config: Config = {
       padding: {
         "1/10": "10%",
       },
+      gridTemplateColumns: {
+        "auto-fill-minmax": "repeat(auto-fill, minmax(20rem, 1fr))",
+      },
     },
   },
   plugins: [],
