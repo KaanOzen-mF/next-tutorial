@@ -17,7 +17,7 @@ export default function MealItem({
   slug,
 }: MealItemProps) {
   return (
-    <article className="flex flex-col justify-between h-full rounded shadow-md overflow-hidden bg-gradient-to-r-from-orange-to-yellow">
+    <article className="flex flex-col justify-between text-ddd6cb h-full rounded shadow-md overflow-hidden bg-custom-gradient">
       <header>
         <div className=" relative h-60">
           <Image src={image} alt={title} className=" object-cover" fill />
