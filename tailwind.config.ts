@@ -12,10 +12,13 @@ const config: Config = {
       backgroundImage: {
         "gradient-to-r-from-orange-to-yellow":
           "linear-gradient(to right, #f9572a, #ffc905)",
+        "custom-gradient": "linear-gradient(90deg, #2c1e19, #25200f)",
       },
+
       colors: {
         ff9b05: "#ff9b05",
         f9b241: "#f9b241",
+        ddd6cb: "#ddd6cb",
       },
       padding: {
         "1/10": "10%",
