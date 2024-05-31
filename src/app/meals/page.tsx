@@ -7,7 +7,7 @@ export default async function Meals() {
 
   return (
     <>
-      <header className="gap-12 mt-12 mr-auto mb-20 ml-auto w-11/12 max-w-6xl text-2xl text-center">
+      <header className="gap-12 mt-12 mr-auto mb-20 ml-auto w-11/12 max-w-6xl text-2xl text-center text-white">
         <h1>
           Delicious meals, created{" "}
           <span className="bg-gradient-to-r-from-orange-to-yellow bg-clip-text text-transparent">
