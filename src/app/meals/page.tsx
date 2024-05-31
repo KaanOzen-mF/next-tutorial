@@ -1,6 +1,13 @@
+import { Suspense } from "react";
 import MealsGrid from "@/components/mealsGrid";
 import { getMeals } from "@/lib/meals";
 import Link from "next/link";
+
+async function MealsItem() {
+  const meals = await getMeals();
+
+  return <MealsGrid meals={meals} />;
+}
 
 export default async function Meals() {
   const meals = await getMeals();
@@ -28,7 +35,15 @@ export default async function Meals() {
         </p>
       </header>
       <main className="flex flex-col items-center">
-        <MealsGrid meals={meals} />
+        <Suspense
+          fallback={
+            <p className="text-center animate-pulse text-white">
+              Fetching meals...
+            </p>
+          }
+        >
+          <MealsItem />
+        </Suspense>
       </main>
       ;
     </>
