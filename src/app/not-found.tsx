@@ -3,7 +3,7 @@ export default function NotFound() {
     <main className="mt-20 text-center">
       <h1
         className="text-7xl m-0 font-black uppercase
-    bg-gradient-to-r-from-orange-to-yellow bg-clip-text text-transparentl bg-cover bg-center"
+    bg-gradient-to-r-from-orange-to-yellow bg-clip-text text-transparent bg-cover bg-center"
       >
         Not Found!
       </h1>
