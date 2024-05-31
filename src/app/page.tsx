@@ -1,5 +1,4 @@
 import ImageSlider from "@/components/imageSlider";
-import NavLink from "@/components/navLink";
 
 export default function Home() {
   return (
@@ -20,7 +19,9 @@ export default function Home() {
             >
               NextLevel Food for NextLevel Foodies
             </h1>
-            <p className="mt-4">Taste & Share food from all over the world</p>
+            <p className="mt-4 text-white">
+              Taste & Share food from all over the world
+            </p>
           </div>
           {/* Hero Part  End*/}
 
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className="text-white">
         {/* Section Part Start*/}
         <section className="flex flex-col text-2xl w-11/12 max-w-3xl my-8 mx-auto text-center">
           <h2>How it works</h2>
