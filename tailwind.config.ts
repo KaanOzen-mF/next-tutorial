@@ -13,12 +13,16 @@ const config: Config = {
         "gradient-to-r-from-orange-to-yellow":
           "linear-gradient(to right, #f9572a, #ffc905)",
         "custom-gradient": "linear-gradient(90deg, #2c1e19, #25200f)",
+        "gradient-to-r-custom": "linear-gradient(90deg, #fd4715, #f9b241)",
+        "action-gradient": "linear-gradient(90deg, #f9572a, #ff9b05)",
       },
 
       colors: {
         ff9b05: "#ff9b05",
         f9b241: "#f9b241",
         ddd6cb: "#ddd6cb",
+        outlineColor: "#f99f2a",
+        formFocusBg: "#1f252d",
       },
       padding: {
         "1/10": "10%",
