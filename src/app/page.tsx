@@ -1,4 +1,5 @@
 import ImageSlider from "@/components/imageSlider";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +28,24 @@ export default function Home() {
 
           {/* CTA Part Start*/}
 
-          <div className="flex text-xl gap-4"></div>
+          <div className="flex text-2xl gap-4">
+            <Link
+              href="/community"
+              className="inline-block mt-4 px-2 py-2 rounded-md font-bold bg-transparent
+              gradient-to-r-from-orange-to-yellow text-white hover:bg-gradient-to-r-from-orange-to-yellow hover:bg-clip-text hover:text-transparent"
+            >
+              Join the Community
+            </Link>
+            <Link
+              href="/meals"
+              className="inline-block mt-4 py-2 px-4 rounded-md text-white 
+              bg-gradient-to-r-from-orange-to-yellow
+              hover:bg-gradient-to-r-custom active:bg-gradient-to-r-custom "
+            >
+              Explore Meals
+            </Link>
+          </div>
+
           {/* CTA Part End*/}
         </div>
       </header>
