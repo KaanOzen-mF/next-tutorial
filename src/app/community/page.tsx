@@ -21,7 +21,7 @@ export default function Community() {
           Community Perks
         </h2>
 
-        <ul className="list-none mt-12 mb-0 p-0 flex flex-col items-center">
+        <ul className="list-none mt-12 mb-0 p-0 flex flex-col items-center text-white">
           <li className="flex flex-col items-center gap-8">
             <Image
               src={mealIcon}
