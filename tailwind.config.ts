@@ -23,12 +23,28 @@ const config: Config = {
         ddd6cb: "#ddd6cb",
         outlineColor: "#f99f2a",
         formFocusBg: "#1f252d",
+        instructionsBg: "#6e6464",
+        instructionsText: "#13120f",
+        cfa69b: "#cfa69b",
       },
       padding: {
         "1/10": "10%",
       },
       gridTemplateColumns: {
         "auto-fill-minmax": "repeat(auto-fill, minmax(20rem, 1fr))",
+      },
+      width: {
+        "90%": "90%",
+      },
+      animation: {
+        "fade-slide-in-left": "fade-slide-in-from-left 1s ease-out forwards",
+        "fade-slide-in-right": "fade-slide-in-from-right 1s ease-out forwards",
+        "fade-slide-in-bottom":
+          "fade-slide-in-from-bottom 1s ease-out forwards",
+      },
+      maxWidth: {
+        "320": "80rem",
+        "240": "60rem",
       },
     },
   },
