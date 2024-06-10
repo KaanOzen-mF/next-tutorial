@@ -1,9 +1,14 @@
+import ImagePicker from "@/components/imagePicker";
+
 export default function ShareMealPage() {
   return (
     <>
-      <header className="gap-12 mt-12 mr-auto mb-20 ml-auto w-5/6 max-w-6xl text-ddd6cb text-2xl">
-        <h1>
-          Share your <span className="font-sans">favorite meal</span>
+      <header className="gap-12 mt-12 mr-auto mb-20 ml-auto max-w-6xl text-ddd6cb text-2xl w-90%">
+        <h1 className="font-sans">
+          Share your{" "}
+          <span className="bg-gradient-to-r-from-orange-to-yellow bg-clip-text fill-transparent">
+            favorite meal
+          </span>
         </h1>
         <p>Or any other meal you feel needs sharing!</p>
       </header>
@@ -96,6 +101,7 @@ export default function ShareMealPage() {
               focus:outline-outlineColor focus:bg-formFocusBg"
             ></textarea>
           </p>
+          <ImagePicker />
           <p className="w-full mt-6 mb-3">
             <button
               type="submit"
