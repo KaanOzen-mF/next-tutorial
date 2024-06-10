@@ -5,10 +5,10 @@ export default function NotFound() {
         className="text-7xl m-0 font-black uppercase
     bg-gradient-to-r-from-orange-to-yellow bg-clip-text text-transparent bg-cover bg-center"
       >
-        Not Found!
+        Meal Not Found!
       </h1>
       <p className="text-2xl font-medium text-white">
-        Unfortunately, we could not find the requested page
+        Unfortunately, we could not find the requested page or meal data.
       </p>
     </main>
   );
