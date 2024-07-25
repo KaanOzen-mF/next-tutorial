@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -13,4 +15,5 @@ html {
 body {
   margin: 0;
   background: radial-gradient(#282c34, #282c34);
+  font-family: "Quicksand", sans-serif;
 }
