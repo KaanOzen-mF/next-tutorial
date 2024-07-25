@@ -13,6 +13,12 @@ module.exports = {
       colors: {
         "gradient-radial": "radial-gradient(#282c34, #282c34)",
       },
+      fontFamily: {
+        quicksand: ["Quicksand", "sans-serif"],
+      },
+      textShadow: {
+        "golden-glow": "0 0 18px rgba(248, 190, 42, 0.8)",
+      },
     },
   },
   plugins: [],
