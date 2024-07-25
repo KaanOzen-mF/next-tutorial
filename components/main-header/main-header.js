@@ -1,8 +1,8 @@
-import Link from "next/link";
-
 import logoImg from "@/assests/logo.png";
 import Image from "next/image";
 import MainHeaderBackground from "./main-header-background";
+import Link from "next/link";
+import NavLink from "./nav-link";
 
 export default function MainHeader() {
   return (
@@ -25,20 +25,10 @@ export default function MainHeader() {
         <nav>
           <ul className="flex gap-6 list-none m-0 p-0 text-lg md:text-xl text-[#ddd6cb]">
             <li>
-              <Link
-                href="/meals"
-                className="text-logoColor font-bold py-2 px-4 rounded hover:bg-gradient-to-r from-[#ff8a05] to-[#f9b331] hover:bg-clip-text hover:text-transparent hover:shadow-[0_0_18px_rgba(248,190,42,0.8)]"
-              >
-                Browse Meals
-              </Link>
+              <NavLink href="/meals">Browse Meals</NavLink>
             </li>
             <li>
-              <Link
-                href="/community"
-                className="text-logoColor font-bold py-2 px-4 rounded hover:bg-gradient-to-r from-[#ff8a05] to-[#f9b331] hover:bg-clip-text hover:text-transparent hover:shadow-[0_0_18px_rgba(248,190,42,0.8)]"
-              >
-                Foodies Community
-              </Link>
+              <NavLink href="/community">Foodies Community</NavLink>
             </li>
           </ul>
         </nav>
