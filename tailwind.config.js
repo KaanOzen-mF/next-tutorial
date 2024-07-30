@@ -31,6 +31,8 @@ module.exports = {
       },
       colors: {
         "gradient-radial": "radial-gradient(#282c34, #282c34)",
+        "custom-outline": "#f99f2a",
+        "custom-bg": "#1f252d",
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
@@ -41,6 +43,7 @@ module.exports = {
       },
       boxShadow: {
         custom: "0 0 0.5rem rgba(0, 0, 0, 0.5)",
+        actionShadow: "0 2px 5px rgba(0, 0, 0, 0.3);",
       },
     },
   },
