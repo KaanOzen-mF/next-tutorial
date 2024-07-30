@@ -1,3 +1,5 @@
+import ImagePicker from "@/components/meals/image-picker";
+
 export default function ShareMealPage() {
   return (
     <>
@@ -23,11 +25,27 @@ export default function ShareMealPage() {
                 Your Name
               </label>
               <input
-                className="block w-full px-2 py-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
+                className="block w-full px-2 py-4 mb-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
                 focus:outline-none focus:ring-2 focus:ring-custom-outline focus:bg-custom-bg"
                 type="text"
                 id="name"
                 name="name"
+                required
+              />
+            </p>
+            <p className="w-full">
+              <label
+                className="block mb-2 text-base uppercase text-[#b3aea5] font-bold"
+                htmlFor="name"
+              >
+                Your Email
+              </label>
+              <input
+                className="block w-full px-2 py-4 mb-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
+                focus:outline-none focus:ring-2 focus:ring-custom-outline focus:bg-custom-bg"
+                type="email"
+                id="email"
+                name="email"
                 required
               />
             </p>
@@ -40,7 +58,7 @@ export default function ShareMealPage() {
               Title
             </label>
             <input
-              className="block w-full px-2 py-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
+              className="block w-full px-2 py-4 mb-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
               focus:outline-none focus:ring-2 focus:ring-custom-outline focus:bg-custom-bg"
               type="text"
               id="summary"
@@ -56,7 +74,7 @@ export default function ShareMealPage() {
               Short Summary
             </label>
             <input
-              className="block w-full px-2 py-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
+              className="block w-full px-2 py-4 mb-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
               focus:outline-none focus:ring-2 focus:ring-custom-outline focus:bg-custom-bg"
               type="text"
               id="summary"
@@ -72,14 +90,14 @@ export default function ShareMealPage() {
               Instructions
             </label>
             <textarea
-              className="block w-full px-2 py-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
+              className="block w-full px-2 py-4 mb-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
               focus:outline-none focus:ring-2 focus:ring-custom-outline focus:bg-custom-bg"
               id="instructions"
               name="instructions"
               rows={"10"}
               required
             ></textarea>
-            IMAGE PICKER
+            <ImagePicker />
             <p className="text-right">
               <button
                 className="border-0 px-3 py-3 border-none bg-gradient-to-r from-[#f9572a] to-[#ff8a05]
