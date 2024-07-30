@@ -13,6 +13,7 @@ export default function ImagePicker({ label, name }) {
     const file = event.target.files[0];
 
     if (!file) {
+      setPickedImage(null);
       return;
     }
 
@@ -24,7 +25,7 @@ export default function ImagePicker({ label, name }) {
 
     fileReader.readAsDataURL(file);
   }
-  
+
   return (
     <div>
       <label htmlFor={name}>{label}</label>
@@ -47,6 +48,7 @@ export default function ImagePicker({ label, name }) {
           name={name}
           ref={imageInput}
           onChange={handleImageChange}
+          required
         />
         <button
           className="button border-0 py-2 px-6 bg-gray-400 rounded cursor-pointer font-inherit hover:bg-gray-500 focus:bg-gray-500"
