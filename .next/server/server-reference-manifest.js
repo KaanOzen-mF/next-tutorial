@@ -1,1 +1,1 @@
-self.__RSC_SERVER_MANIFEST="{\n  \"node\": {},\n  \"edge\": {},\n  \"encryptionKey\": \"D8zkHl/7ux64lMgBEzS8qdS9cTdIqNdHSr9QfLIaKMk=\"\n}"
+self.__RSC_SERVER_MANIFEST="{\"node\":{\"82335c9376c5b65fa4a5c70a6f9eece32d7c59da\":{\"workers\":{\"app/meals/share/page\":5186},\"layer\":{\"app/meals/share/page\":\"rsc\"}}},\"edge\":{},\"encryptionKey\":\"DDXsaJhQPT1VCmg/OGrAR6/c0rztPVNC+J0Ta10CX74=\"}"
