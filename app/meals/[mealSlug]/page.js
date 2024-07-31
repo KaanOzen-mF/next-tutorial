@@ -1,17 +1,20 @@
-import { getMeal } from "@/lib/meals";
-import Image from "next/image";
-import { notFound } from "next/navigation";
+import { getMeal } from "@/lib/meals"; // Importing the function to fetch meal details
+import Image from "next/image"; // Importing the Next.js Image component for optimized image handling
+import { notFound } from "next/navigation"; // Importing the notFound function to handle 404 scenarios
 
+// Main component for displaying detailed information about a specific meal
 export default function MealDetailsPage({ params }) {
-  const meal = getMeal(params.mealSlug);
+  const meal = getMeal(params.mealSlug); // Fetching meal details based on the slug from params
   if (!meal) {
-    notFound();
+    notFound(); // If the meal is not found, trigger a 404 page
   }
 
+  // Replace newline characters in meal instructions with HTML line breaks
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
 
   return (
     <>
+      {/* Header section displaying the meal's image, title, creator, and summary */}
       <header className="flex px-8 py-4 gap-24 mt-12 m-auto max-w-7xl">
         <div className="relative w-[30rem] h-80">
           <Image
@@ -28,7 +31,7 @@ export default function MealDetailsPage({ params }) {
           <p className="text-2xl text-[#cfa69b] italic">
             by{" "}
             <a
-              className=" bg-gradient-to-r from-[#ff8a05] to-[#f9b331] bg-clip-text text-transparent"
+              className="bg-gradient-to-r from-[#ff8a05] to-[#f9b331] bg-clip-text text-transparent"
               href={`mailto:${meal.creator_email}`}
             >
               {meal.creator}
@@ -37,6 +40,7 @@ export default function MealDetailsPage({ params }) {
           <p className="text-2xl">{meal.summary}</p>
         </div>
       </header>
+      {/* Main content section displaying the meal's instructions */}
       <main className="flex items-center justify-center">
         <p
           className="text-xl bg-[#6e6464] text-[#13120f] rounded-lg p-8 max-w-4xl mx-8 my-auto animate-fade-slide-in-from-bottom"
