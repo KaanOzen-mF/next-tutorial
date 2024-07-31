@@ -62,8 +62,8 @@ export default function ShareMealPage() {
               className="block w-full px-2 py-4 mb-4 rounded border border-[#454952] bg-[#1c2027] text-xl text-[#ddd6cb]
               focus:outline-none focus:ring-2 focus:ring-custom-outline focus:bg-custom-bg"
               type="text"
-              id="summary"
-              name="summary"
+              id="title"
+              name="title"
               required
             />
           </p>
@@ -98,7 +98,7 @@ export default function ShareMealPage() {
               rows={"10"}
               required
             ></textarea>
-            <ImagePicker />
+            <ImagePicker name="image" label="Upload Image" />
             <p className="text-right">
               <button
                 className="border-0 px-3 py-3 border-none bg-gradient-to-r from-[#f9572a] to-[#ff8a05]
