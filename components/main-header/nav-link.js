@@ -1,10 +1,12 @@
-"use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+"use client"; // This directive indicates that the component is a client-side component
+import Link from "next/link"; // Importing the Link component for navigation
+import { usePathname } from "next/navigation"; // Importing usePathname to get the current route
 
+// NavLink component for creating navigation links with active state styling
 export default function NavLink({ href, children }) {
-  //Gives currently active path
+  // Get the current pathname to determine if the link is active
   const path = usePathname();
+
   return (
     <Link
       href={href}

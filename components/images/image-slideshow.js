@@ -1,8 +1,9 @@
-"use client";
+"use client"; // This directive indicates that the component is a client-side component
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react"; // Importing hooks for state and side effects
+import Image from "next/image"; // Importing Next.js Image component for optimized image handling
 
+// Importing images to be used in the slideshow
 import burgerImg from "@/assests/burger.jpg";
 import curryImg from "@/assests/curry.jpg";
 import dumplingsImg from "@/assests/dumplings.jpg";
@@ -11,6 +12,7 @@ import pizzaImg from "@/assests/pizza.jpg";
 import schnitzelImg from "@/assests/schnitzel.jpg";
 import tomatoSaladImg from "@/assests/tomato-salad.jpg";
 
+// Array of images and their alt text descriptions for the slideshow
 const images = [
   { image: burgerImg, alt: "A delicious, juicy burger" },
   { image: curryImg, alt: "A delicious, spicy curry" },
@@ -21,16 +23,19 @@ const images = [
   { image: tomatoSaladImg, alt: "A delicious tomato salad" },
 ];
 
+// Main component for the image slideshow
 export default function ImageSlideshow() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // State to track the current image index
 
   useEffect(() => {
+    // Set an interval to update the current image index every 5 seconds
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex < images.length - 1 ? prevIndex + 1 : 0
       );
     }, 5000);
 
+    // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
