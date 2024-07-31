@@ -85,6 +85,7 @@ These technologies were chosen to create a robust, secure, and efficient web app
 
 ## Folder Structure
 
+```
 The project is organized into the following main directories and files:
 ├── public/ # Public assets like images and static files
 │ └── images/ # Directory for storing uploaded meal images
@@ -107,6 +108,7 @@ The project is organized into the following main directories and files:
 ├── .gitignore # Git ignore file specifying which files to exclude from version control
 ├── package.json # NPM package file with project dependencies and scripts
 └── README.md # This file
+```
 
 ## Acknowledgements
 
